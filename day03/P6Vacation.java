@@ -1,8 +1,10 @@
 package day03;
 
+import common.Base;
+
 public class P6Vacation {
     static void main() {
-        base.step(2, "휴가 정보");
+        Base.step(2, "휴가 정보");
 
         String name;
         String destination;
@@ -33,7 +35,7 @@ public class P6Vacation {
         System.out.printf("age : %d\nvacation day : %d\'th in %d days\nbudgets : %d\n", age, days_of_trip, days, budget);
         System.out.printf("Feels' temperature : %.2f\n", temperature_perceive);
 
-        base.step("날씨(폭염) 정보");
+        Base.step("날씨(폭염) 정보");
 
         String heat_stage, heat_action;
 
@@ -56,7 +58,7 @@ public class P6Vacation {
 
         System.out.printf("현재 체감온도 %.2f.\n폭염단계 [%s], 권장 행동 : %s\n", temperature_perceive, heat_stage, heat_action);
 
-        base.step("티켓 정보");
+        Base.step("티켓 정보");
 
         int base_price, early_price, ticket_final;
         base_price = 120000;
@@ -68,7 +70,7 @@ public class P6Vacation {
 
         System.out.printf("얼리버드 : %b\n학생할인 %b\n최종 티켓 가격 : %d\n", is_EB, is_student, ticket_final);
 
-        base.step("휴양 계획");
+        Base.step("휴양 계획");
 
         String activity, meal;
 
@@ -96,7 +98,7 @@ public class P6Vacation {
 
         System.out.printf("활동 : %s\n식사 : %s\n", activity, meal);
 
-        base.step("숙박 예산");
+        Base.step("숙박 예산");
 
         int hotel_p_day = is_member ? 120000 : 150000;
         int hotel_total = hotel_p_day * (days - 1);  // 4박 5일이면 3박
@@ -119,7 +121,7 @@ public class P6Vacation {
             "페스티벌 + 호텔 총: %d W\n예산초과 : %b\n남은 예산 %d -> 추가 쇼핑 가능",
                 hotel_p_day, room_tier, days, hotel_total, spent, is_budget_over, (budget-spent));
 
-        base.step("** 여행 카드 **");
+        Base.step("** 여행 카드 **");
 
         System.out.printf("********* %s 님의 %s 휴가 **********\n", name, destination);
         System.out.printf("현재 체감온도 %.2f  -> 폭염단계 [%s]\n", temperature_perceive, heat_stage);

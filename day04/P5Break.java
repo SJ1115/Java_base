@@ -1,8 +1,10 @@
 package day04;
 
+import common.Base;
+
 public class P5Break {
     static void main() {
-        base.step(2, "break in 5");
+        Base.step(2, "break in 5");
 
         for (int i=0; i<10; i++){
             if (i==5) {
@@ -13,7 +15,7 @@ public class P5Break {
             System.out.printf("i=%d\n",i);
         }
 
-        base.step("짝수 건너뛰기");
+        Base.step("짝수 건너뛰기");
 
         for (int i=1; i<10; i++){
             if (i%2==0) continue;
@@ -21,7 +23,7 @@ public class P5Break {
             System.out.printf("i=%d\n",i);
         }
 
-        base.step("싸운날 스킵하기");
+        Base.step("싸운날 스킵하기");
 
         int[] weekAffection = {80, 95, 30, 85, 20, 100, 75};      // 일별 호감도
         boolean[] isFight = {false, false, true, false, true, false, false};  // 싸운 날
@@ -41,7 +43,7 @@ public class P5Break {
 
         System.out.printf("정상 %d 일, 합계 %d\n", days, sum);
 
-        base.step("200점 채우기");
+        Base.step("200점 채우기");
 
         double[] monthGain = {25.5, 28.0, 22.3, 30.1, 18.5, 27.8, 31.2, 24.0};
 
@@ -62,7 +64,7 @@ public class P5Break {
         }
         System.out.printf("%d주 만에 %.1f점 달성!!\n", week, cuml);
 
-        base.step("While true with break");
+        Base.step("While true with break");
 
         int round=0;
 
@@ -74,7 +76,7 @@ public class P5Break {
             }
         }
 
-        base.step("실습");
+        Base.step("실습");
 
         int sent = 0;
         int limit = 100;

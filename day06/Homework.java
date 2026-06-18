@@ -1,5 +1,7 @@
 package day06;
 
+import common.Base;
+
 import java.util.ArrayList;
 
 public class Homework {

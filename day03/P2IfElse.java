@@ -1,9 +1,11 @@
 package day03;
 
+import common.Base;
+
 public class P2IfElse {
 
     static void main() {
-        base.step(2, "Single If");
+        Base.step(2, "Single If");
 
         boolean has_ticket = false;
 
@@ -12,7 +14,7 @@ public class P2IfElse {
         }
         System.out.println("Ticket Check");
 
-        base.step("If-Else");
+        Base.step("If-Else");
 
         int height = 35;
         if (height >= 40){
@@ -23,7 +25,7 @@ public class P2IfElse {
         }
         System.out.println("Height Check");
 
-        base.step(5, "자동정렬");
+        Base.step(5, "자동정렬");
         int uvIndex=8;
         if (uvIndex>=8){
 System.out.println("자외선 매우 강함 — 선크림 SPF 50+");
@@ -32,7 +34,7 @@ System.out.println("자외선 매우 강함 — 선크림 SPF 50+");
         }
 
 
-        base.step("추가문제");
+        Base.step("추가문제");
         height = 165;
         int age = 28;
         boolean has_license = true;

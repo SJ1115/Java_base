@@ -1,5 +1,7 @@
 package day06;
 
+import common.Base;
+
 public class P7Bonus {
 
     static void main() {

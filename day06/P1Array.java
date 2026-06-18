@@ -3,6 +3,8 @@ package day06;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import common.Base;
+
 public class P1Array {
 
     static void main() {

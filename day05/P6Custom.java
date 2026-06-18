@@ -1,5 +1,7 @@
 package day05;
 
+import common.Base;
+
 public class P6Custom {
 
     static void callCat(String name) {

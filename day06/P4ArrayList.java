@@ -2,6 +2,7 @@ package day06;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import common.Base;
 
 public class P4ArrayList {
     static void main() {

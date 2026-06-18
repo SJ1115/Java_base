@@ -1,8 +1,10 @@
 package day04;
 
+import common.Base;
+
 public class P4Nested {
     public static void main(){
-        base.step(2, "중첩");
+        Base.step(2, "중첩");
 
         for (int i=0; i<3; i++){
             System.out.printf("%d번째 i-loop 시작\n", i+1);
@@ -11,13 +13,13 @@ public class P4Nested {
             }
         }
 
-        base.step("구구단 2단");
+        Base.step("구구단 2단");
 
         for (int i=1; i<=9; i++){
             System.out.printf("2 x %d = %d\n", i, 2*i);
         }
 
-        base.step("전체");
+        Base.step("전체");
 
         for(int i=2; i<10; i++){
             for (int j=1; j<10; j++){
@@ -26,7 +28,7 @@ public class P4Nested {
             System.out.println("------------");
         }
 
-        base.step("일주일 안부전화");
+        Base.step("일주일 안부전화");
 
         String[] days = {"월", "화", "수", "목", "금", "토", "일"};
         String[] times = {"아침", "점심", "저녁"};
@@ -42,7 +44,7 @@ public class P4Nested {
             }
         }
 
-        base.step("Heart Bomb");
+        Base.step("Heart Bomb");
 
         int rows=5;
         int cols=3;
@@ -56,7 +58,7 @@ public class P4Nested {
             System.out.println(line);
         }
 
-        base.step("실습");
+        Base.step("실습");
 
         days = new String[]  {" 영화관 ", "감성카페", "한강공원"};
         times = new String[] {"점심", "저녁", "야경"};

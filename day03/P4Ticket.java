@@ -1,12 +1,14 @@
 package day03;
 
+import common.Base;
+
 public class P4Ticket {
     static int ticket_price(boolean is_EB){
         return is_EB ? 88000 : 120000;
     }
 
     static void main() {
-        base.step(2, "Early-Bird Discount");
+        Base.step(2, "Early-Bird Discount");
 
         boolean is_EB = true;
 
@@ -15,14 +17,14 @@ public class P4Ticket {
         System.out.printf("얼리버드 : %b\n", is_EB);
         System.out.printf("티켓가격 : %d 원", price);
 
-        base.step("if-else version");
+        Base.step("if-else version");
 
         price = 120000;
         if( is_EB ) price = 88000;
         System.out.printf("얼리버드 : %b\n", is_EB);
         System.out.printf("티켓가격 : %d 원", price);
 
-        base.step("SUMMER FESTA tickets");
+        Base.step("SUMMER FESTA tickets");
 
         boolean is_student = true;
 
@@ -39,7 +41,7 @@ public class P4Ticket {
         int total = waterBomb+penta+DMZPeace+BeachWave;
         System.out.printf("총 %d W\n", total);
 
-        base.step("++Student Discount");
+        Base.step("++Student Discount");
 
         int final_price = (is_EB && is_student) ? (int)(price*.7) : price;
 
@@ -47,7 +49,7 @@ public class P4Ticket {
         System.out.printf("기본 가격 : %d\n", price);
         System.out.printf("최종 가격 : %d\n", final_price);
 
-        base.step("결재 등급");
+        Base.step("결재 등급");
         int total_spent = 350000;
 
         String tier = total_spent >= 200000 ? "VIP" : "일반";
@@ -57,7 +59,7 @@ public class P4Ticket {
         System.out.printf("등급 : %s\n", tier);
         System.out.printf("혜택 : %s\n", benefit);
 
-        base.step("실습");
+        Base.step("실습");
 
         boolean is_weekend = true;
         boolean is_season  = true;

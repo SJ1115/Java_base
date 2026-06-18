@@ -1,6 +1,6 @@
 package day01;
 
-public class homework{
+public class H1Print {
     static String t0_name = "이성주";
     static String t3_mbti = "INTP";
 

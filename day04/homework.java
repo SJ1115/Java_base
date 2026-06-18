@@ -1,8 +1,10 @@
 package day04;
 
+import common.Base;
+
 public class homework {
     static void main() {
-        base.step("푸드코드 기본 정보");
+        Base.step("푸드코드 기본 정보");
 
         String restaurant = "SkyMall Food Court";
         String manager = "SungJu Lee";
@@ -16,13 +18,13 @@ public class homework {
                 restaurant, manager, store, goal_day, goal_mon
         );
 
-        base.step("30일 영업 미션");
+        Base.step("30일 영업 미션");
 
         for (int i=1; i<31; i++){
             System.out.printf("%2d일 차 -  %s 영업 시작\n", i, restaurant);
         }
 
-        base.step("일주일 매출");
+        Base.step("일주일 매출");
 
         int[] week_sales = {4800000, 5200000, 4600000, 5500000, 4900000, 6200000, 5800000};
         int sum=0;
@@ -34,7 +36,7 @@ public class homework {
         System.out.printf("일주일 매출 : %d W\n평균매출 %.2f W\n",
                 sum, mean);
 
-        base.step("월 목표까지 ?일");
+        Base.step("월 목표까지 ?일");
 
         int daily_sales = 5285000;
         int days = 0;
@@ -49,7 +51,7 @@ public class homework {
                 days, cum_sales, goal_mon
         );
 
-        base.step("주차별 카테고리");
+        Base.step("주차별 카테고리");
 
         String[] categories = {"한식", "중식", "일식"};
 
@@ -61,7 +63,7 @@ public class homework {
             }
         }
 
-        base.step("휴무 제외 합계");
+        Base.step("휴무 제외 합계");
 
         int[] store_sales = {450000, 380000, 0, 520000, 410000, 0, 490000, 380000, 410000, 470000};
         int store_count=0;
@@ -77,7 +79,7 @@ public class homework {
         System.out.printf("영업 매장 : %d 개\n매출 합계 : %d\n",
                 store_count, store_sum);
 
-        base.step("일일 목표 달성 시 종료");
+        Base.step("일일 목표 달성 시 종료");
 
         double[] month_sales = {4800000, 4500000, 4900000, 5200000, 4800000, 5500000,
                 4700000, 4900000, 5100000, 5000000, 5400000, 4600000,
@@ -97,7 +99,7 @@ public class homework {
             }
         }
 
-        base.step("매장 등급");
+        Base.step("매장 등급");
 
         char grade;
         String desc;
@@ -122,7 +124,7 @@ public class homework {
                 "%d W --> %c 등급 ( %s )\n",
                 store_revenue, grade, desc);
 
-        base.step("대표 메뉴");
+        Base.step("대표 메뉴");
 
         String category  ="일식";
 

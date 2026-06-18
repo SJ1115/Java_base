@@ -1,9 +1,11 @@
 package day04;
 
+import common.Base;
+
 public class P2Sum {
 
     static void main() {
-        base.step(2, "1 to 10");
+        Base.step(2, "1 to 10");
 
         int sum=0;
         for (int i=0; i<10; i++){
@@ -11,7 +13,7 @@ public class P2Sum {
         }
         System.out.printf("Sum : %d\n", sum);
 
-        base.step("호감도 합계");
+        Base.step("호감도 합계");
 
         int[] weekAffection = {80, 0, 95, 0, 88, 100, 75};
 
@@ -26,7 +28,7 @@ public class P2Sum {
         System.out.println("평균(miss) : " + sum/7);
         System.out.println("평균(real) : " + (double)sum/7);
 
-        base.step("호감도 오류정정");
+        Base.step("호감도 오류정정");
 
         sum = 0;
         int count = 0;
@@ -40,7 +42,7 @@ public class P2Sum {
 
         System.out.printf("%d일 동안의 호감도 평균 %f\n", count, (double)sum/count);
 
-        base.step("최저/최고기록");
+        Base.step("최저/최고기록");
 
         int max = 0;
         int min = 999;
@@ -61,7 +63,7 @@ public class P2Sum {
 
         System.out.printf("만점 : %d 회 달성\n최고 : %d 점\n최저 : %d 점\n", count, max, min);
 
-        base.step(8, "실습");
+        Base.step(8, "실습");
         int[] weekCall = {15, 0, 30, 25, 0, 45, 20};
 
         sum = 0;

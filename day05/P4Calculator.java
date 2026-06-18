@@ -1,5 +1,7 @@
 package day05;
 
+import common.Base;
+
 public class P4Calculator {
     static int add(int a, int b) {
         return a + b;

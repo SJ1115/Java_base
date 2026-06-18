@@ -1,8 +1,10 @@
 package day04;
 
+import common.Base;
+
 public class P3While {
     static void main() {
-        base.step(2, "while x5");
+        Base.step(2, "while x5");
 
         int i=0;
         while(i<5){
@@ -11,7 +13,7 @@ public class P3While {
         }
         System.out.printf("연락끗 : %d회차\n", i+1);
 
-        base.step("목표는 100점");
+        Base.step("목표는 100점");
 
         int goal = 100;
         int curr = 0;
@@ -27,14 +29,14 @@ public class P3While {
         }
         System.out.printf("총 %d일 소요\n", day);
 
-        base.step("무한루프");
+        Base.step("무한루프");
 
         /*while (day >0){
             System.out.printf("%d\t", day);
             if (day > 10) break;
         }*/
 
-        base.step("while + Condition");
+        Base.step("while + Condition");
 
         goal = 200;
         curr = 0;
@@ -55,7 +57,7 @@ public class P3While {
             System.out.printf("기한 초과...%d점 부족\n", goal-curr);
         }
 
-        base.step("For vs While");
+        Base.step("For vs While");
 
         for (i=0; i<3; i++) System.out.println(i+1);
 
@@ -65,7 +67,7 @@ public class P3While {
             System.out.println(i);
         }
 
-        base.step("실습");
+        Base.step("실습");
 
         int budget, price, count;
         budget = 30000;

@@ -1,8 +1,10 @@
 package day03;
 
+import common.Base;
+
 public class P5Weekday {
     static void main() {
-        base.step(2, "Summer Activity");
+        Base.step(2, "Summer Activity");
 
         int day = 3;
 
@@ -31,7 +33,7 @@ public class P5Weekday {
                 System.out.printf("고장!!!!! day = %d는 유효하지 않은 입력\n", day);
         }
 
-        base.step("break 누락");
+        Base.step("break 누락");
 
         day = 2;
         switch (day){
@@ -68,7 +70,7 @@ public class P5Weekday {
                 System.out.println("평일 : 무리ㄴ");
         }
 
-        base.step("Switch vs IF");
+        Base.step("Switch vs IF");
 
         day = 4;
 
@@ -94,7 +96,7 @@ public class P5Weekday {
             System.out.println("Sun");
         }
 
-        base.step( "Beach & City");
+        Base.step( "Beach & City");
 
         String beach = "해운대";
 
@@ -115,7 +117,7 @@ public class P5Weekday {
                 System.out.printf("%s : 알 수 없는 해변\n", beach);
         }
 
-        base.step("실습 : 오늘의 빙수");
+        Base.step("실습 : 오늘의 빙수");
 
         beach = "녹차빙수";
 

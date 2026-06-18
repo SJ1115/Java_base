@@ -1,5 +1,7 @@
 package day05;
 
+import common.Base;
+
 public class P2Parameter {
 
     static void giveChr(){

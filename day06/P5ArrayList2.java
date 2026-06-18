@@ -2,6 +2,8 @@ package day06;
 
 import java.util.ArrayList;
 
+import common.Base;
+
 public class P5ArrayList2 {
 
     static void addNew(ArrayList<String> list, String song){

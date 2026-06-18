@@ -1,5 +1,7 @@
 package day06;
 
+import common.Base;
+
 public class P2Loop {
 
     static int sum(int[] list){

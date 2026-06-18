@@ -1,9 +1,11 @@
 package day03;
 
+import common.Base;
+
 public class P1Comp {
 
     static void main() {
-        base.step(2, "비교 연산자");
+        Base.step(2, "비교 연산자");
 
         int i = 5;
         System.out.println( i == 3 );
@@ -15,7 +17,7 @@ public class P1Comp {
         System.out.println( i < 3 );
         System.out.println( i <= 3 );
 
-        base.step("체크 : 성인여부");
+        Base.step("체크 : 성인여부");
 
         int age = 25;
 
@@ -24,7 +26,7 @@ public class P1Comp {
 
         System.out.println("나이   : " + age + "\n성인   : " + is_adult + "\n미성년 : " + is_minor);
 
-        base.step("논리 연산자");
+        Base.step("논리 연산자");
 
         System.out.println( true && true  );
         System.out.println( true && false );
@@ -35,7 +37,7 @@ public class P1Comp {
         System.out.println( !true  );
         System.out.println( !false );
 
-        base.step( "체크 : 입장자격" );
+        Base.step( "체크 : 입장자격" );
 
         boolean has_ticket = true;
 
@@ -52,7 +54,7 @@ public class P1Comp {
 
         System.out.println(!is_started);
 
-        base.step("연산자 오류 실험");
+        Base.step("연산자 오류 실험");
 
         int price = 8000;
         boolean is_check = price == 8000;
@@ -60,7 +62,7 @@ public class P1Comp {
         //boolean is_check = price = 8000;
 
 
-        base.step(7, "추가문제");
+        Base.step(7, "추가문제");
 
         boolean is_early = true;
         System.out.printf("Age : %d\tTickets : %b\n", age, has_ticket);

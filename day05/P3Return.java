@@ -1,5 +1,7 @@
 package day05;
 
+import common.Base;
+
 public class P3Return {
     static void printChr(int morning, int evening){
         int out = addChr(morning, evening);

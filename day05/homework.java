@@ -1,5 +1,7 @@
 package day05;
 
+import common.Base;
+
 public class homework {
 
     static void startCall(){

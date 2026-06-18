@@ -1,10 +1,12 @@
 package day03;
 
+import common.Base;
+
 public class P3Heat {
 
     static void main() {
 
-        base.step(2, "체감온도");
+        Base.step(2, "체감온도");
 
         double temperature_perceive = 32.5;
 
@@ -37,7 +39,7 @@ public class P3Heat {
             System.out.println("일상");
         }
 
-        base.step("Else check");
+        Base.step("Else check");
 
         temperature_perceive = 40;
 
@@ -53,7 +55,7 @@ public class P3Heat {
         } else {*/
             System.out.println("판정 끗");
 
-        base.step("동네 판정");
+        Base.step("동네 판정");
         String region = "서울";
         double temperature = 28.1;
         double humidity = 57;
@@ -81,7 +83,7 @@ public class P3Heat {
         System.out.printf("단계 : %s.\n활동 : %s.\n", stage, action);
 
 
-        base.step("실습 : 자외선");
+        Base.step("실습 : 자외선");
 
     }
 }

@@ -1,5 +1,7 @@
 package day04;
 
+import common.Base;
+
 public class P6Running {
 
     static void main() {

@@ -1,5 +1,7 @@
 package day06;
 
+import common.Base;
+
 public class P3Each {
     public static void main(){
         Base.step(2, "Simple for");

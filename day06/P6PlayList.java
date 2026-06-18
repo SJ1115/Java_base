@@ -2,6 +2,8 @@ package day06;
 
 import java.util.ArrayList;
 
+import common.Base;
+
 public class P6PlayList {
     // (1) 차트 출력 — 배열 + 일반 for
     static void printChart(String[] titles, int[] likes) {
